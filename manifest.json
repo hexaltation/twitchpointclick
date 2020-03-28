@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "TwitchPointClick",
+  "version": "1.0",
+
+  "description": "Collects automatically Twitch's channel points Rewards.",
+
+  "icons": {
+    "48": "icons/twitchpointclick.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["twitchpointclick.js"]
+    }
+  ]
+}
